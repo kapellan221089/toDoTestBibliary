@@ -7,7 +7,7 @@ const nuxt = new Nuxt(config);
 const builder = new Builder(nuxt);
 
 app.use(morgan('dev'));
-
+ const PORT = process.env.PORT
 
 builder.build()
   .then(() => {
