@@ -4,5 +4,6 @@ module.exports = {
       '@nuxtjs/google-fonts'
     ],
     plugins: [{ src: '@/plugins/socket', ssr: false },{src:'@/plugins/search'}],
-    telemetry: false
+    telemetry: false,
+    target: 'static'
 }
