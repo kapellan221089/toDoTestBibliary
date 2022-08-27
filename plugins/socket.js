@@ -6,7 +6,7 @@ export default function({ store }) {
   Vue.use(
     new VueSocketIO({
       debug: true,
-      connection: 'http://localhost:3025',
+      connection: 'https://git.heroku.com/tests-chat.git:8080',
       vuex: {
         store,
         actionPrefix: 'SOCKET_',
