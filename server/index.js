@@ -2,6 +2,7 @@ const {app, server} = require('./app');
 const {Nuxt, Builder}  = require('nuxt');
 const config = require('../nuxt.config');
 const morgan = require('morgan');
+const PORT = process.env.PORT || 3005
 
 const nuxt = new Nuxt(config);
 const builder = new Builder(nuxt);
@@ -14,7 +15,7 @@ builder.build()
   // Рендерить каждый маршрут с Nuxt.js
     app.use(nuxt.render)
     // Запустить сервер
-    server.listen(3004, ()=>{
-       console.log('Server run in 3004 port');
+    server.listen(PORT, ()=>{
+       console.log(`Server run in ${PORT} `);
     });
   });
