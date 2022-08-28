@@ -5,7 +5,9 @@
   "private": false,
   "scripts": {
     "dev": "nuxt",
-    "start": "node ./server/index.js"
+    "start": "node ./server/index.js",
+    "build": "nuxt build",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/ufo": "^0.5.4",
