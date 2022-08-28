@@ -1,4 +1,4 @@
-/*import Vue from 'vue';
+import Vue from 'vue';
 import VueSocketIO from 'vue-socket.io';
 import SocketIO from 'socket.io-client';
 
@@ -6,7 +6,7 @@ export default function({ store }) {
   Vue.use(
     new VueSocketIO({
       debug: true,
-      connection: 'https://git.heroku.com/tests-chat.git:8080',
+      connection: 'host=mighty-taiga-11038.herokuapp.com',
       vuex: {
         store,
         actionPrefix: 'SOCKET_',
@@ -14,4 +14,4 @@ export default function({ store }) {
       }
     })
   )
-}*/
+}
