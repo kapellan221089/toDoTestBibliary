@@ -19,7 +19,7 @@
     "vue-search-input": "^1.1.9",
     "vue-socket.io": "^3.0.7",
     "vue2-filters": "^0.14.0",
-    "vuetify": "^2.6.7",
+    "vuetify": "^2.6.9",
     "vuetify-loader": "^1.9.1"
   },
   "devDependencies": {
