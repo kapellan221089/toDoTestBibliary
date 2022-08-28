@@ -7,14 +7,14 @@ const nuxt = new Nuxt(config);
 const builder = new Builder(nuxt);
 
 app.use(morgan('dev'));
-const PORT = process.env.PORT || 8080
+
 
 builder.build()
   .then(() => {
   // Рендерить каждый маршрут с Nuxt.js
     app.use(nuxt.render)
     // Запустить сервер
-    server.listen(PORT||8080, ()=>{
-       console.log(`Server run in ${PORT}`);
+    server.listen(3004, ()=>{
+       console.log('Server run in 3004 port');
     });
   });
