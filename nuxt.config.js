@@ -5,7 +5,6 @@ module.exports = {
     ],
     plugins: [{ src: '@/plugins/socket', ssr: false },{src:'@/plugins/search'}],
     telemetry: false,
-    target: 'static',
     render: {
       bundleRenderer: {
         runInNewContext: false
